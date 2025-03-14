@@ -1,7 +1,5 @@
+import EmployeeTemplate from "@/components/Modal/EmployeeTemplate";
 import type { Metadata } from "next";
-import "./globals.css";
-import "react-toastify/ReactToastify.css"
-import "react-datepicker/dist/react-datepicker.css";
 
 export const metadata: Metadata = {
   title: "Access By KAI",
@@ -14,11 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-      >
-        {children}
-      </body>
-    </html>
+   <EmployeeTemplate>
+    {children}
+   </EmployeeTemplate>
   );
 }
